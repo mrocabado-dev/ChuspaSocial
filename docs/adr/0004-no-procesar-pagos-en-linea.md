@@ -10,6 +10,8 @@ El Marketplace de ChuspaSocial tiene como objetivo permitir que los usuarios pub
 
 Incorporar pagos en línea aumentaría de forma importante la complejidad técnica y las responsabilidades relacionadas con datos financieros, seguridad, proveedores de pago, devoluciones y disputas.
 
+También introduciría riesgos legales que no forman parte del alcance del proyecto, como definir responsabilidades frente a cobros fallidos, reembolsos y reclamos, cumplir las condiciones del proveedor de pagos y atender obligaciones aplicables al tratamiento de información financiera y a la protección del consumidor. Estos requisitos pueden variar según el proveedor y la jurisdicción, por lo que evitarlos reduce el alcance legal que tendría que asumir ChuspaSocial.
+
 ## Decisión
 
 El Marketplace de ChuspaSocial solo publicará anuncios y facilitará el contacto entre usuarios. ChuspaSocial no procesará, almacenará ni confirmará pagos en línea.
