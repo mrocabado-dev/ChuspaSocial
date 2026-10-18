@@ -20,6 +20,8 @@ namespace local_chuspasocial;
  * Tests for the ChuspaSocial plugin.
  *
  * @package    local_chuspasocial
+ * @category   test
+ * @covers     \core_plugin_manager
  * @copyright  2026 SIS-INF
  * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
