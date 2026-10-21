@@ -92,6 +92,7 @@
 
 | ID | Descripción | Prioridad | Estado |
 |---|---|---|---|
+| RF-011 | Eliminar un comentario propio | Media | Pendiente |
 | RF-012 | Ver los comentarios de una publicación | Alta | Pendiente |
 
 #### Criterios de aceptación
@@ -107,6 +108,17 @@
 - **Dado** un usuario que visualiza una publicación sin comentarios,
 - **Cuando** consulta la publicación,
 - **Entonces** el sistema muestra el área de comentarios sin entradas y permite identificar que aún no existen comentarios.
+### RF-011
+
+**Criterio 1**
+- **Dado** un usuario autenticado que ha realizado un comentario en una publicación,
+- **Cuando** selecciona la opción de eliminar su comentario y confirma la acción,
+- **Entonces** el sistema debe remover el comentario de la publicación y actualizar el contador de comentarios.
+
+**Criterio 2**
+- **Dado** un usuario autenticado que navega por los comentarios de una publicación,
+- **Cuando** visualiza un comentario que pertenece a otro usuario,
+- **Entonces** el sistema no debe mostrar la opción de eliminar dicho comentario.
 ### Reacciones
 
 | ID | Descripción | Prioridad | Estado |
@@ -384,6 +396,7 @@
 | ID | Descripción | Prioridad | Estado |
 |---|---|---|---|
 | RF-029 | Reportar una publicación, comentario o anuncio de libro | Alta | Pendiente |
+| RF-030 | Revisar la cola de reportes | Alta | Pendiente |
 
 #### Criterios de aceptación
 
@@ -404,6 +417,24 @@
 - **Cuando** selecciona un motivo y confirma el reporte,
 
 - **Entonces** el sistema guarda el reporte y notifica que fue registrado correctamente.
+
+### RF-030
+
+**Criterio 1**
+
+- **Dado** que existen reportes abiertos en el sistema,
+
+- **Cuando** un moderador accede a la cola de reportes,
+
+- **Entonces** el sistema muestra los reportes abiertos pendientes de revisión.
+
+**Criterio 2**
+
+- **Dado** que un moderador visualiza la cola de reportes,
+
+- **Cuando** selecciona un reporte,
+
+- **Entonces** el sistema muestra la información del reporte para que pueda revisarlo.
 
 ## Requerimientos No Funcionales
 
